@@ -1,0 +1,32 @@
+
+//Jessica Evans and Sarah Barrett
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800|Noto+Serif+SC');
+
+
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #4281a4; // Cornflower Blue - Action color
+$color-2: #48a9a6; // Turquoise
+$color-3: #e4dfda; // Light Beige
+$color-4: #d4b483; // Goldenrod
+$color-5: #c1666b; // Red
+
+// additional colors
+
+$alert: $color-3;  // red
+
+// fonts
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Noto Serif SC', serif;
+
+
+//All of the new partials
+@import 'partials/background';
+@import 'partials/navigation';
+@import 'partials/page-title';
+@import 'partials/typography';
+@import 'partials/bottom';
+
+

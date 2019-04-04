@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800|Noto+Serif+SC");
+/* --------------------------------
+
+xBackground
+
+-------------------------------- */
+body {
+  /* this is the page background */
+  background-color: #e4dfda;
+}
+
+/* --------------------------------
+
+xNavigation
+
+-------------------------------- */
+header {
+  background-color: #4281a4;
+}
+
+/* --------------------------------
+
+xPage title
+
+-------------------------------- */
+main > h1 {
+  color: #e4dfda;
+}
+
+div .summary {
+  background-color: #48a9a6;
+}
+
+main > h1 {
+  color: #e4dfda;
+}
+
+h3 {
+  color: #e4dfda;
+}
+
+.summary {
+  background-color: #4281a4;
+}
+
+.preamble {
+  background-color: #48a9a6;
+}
+
+.explanation {
+  background-color: #c1666b;
+}
+
+.participation {
+  background-color: #4281a4;
+}
+
+.benefits {
+  background-color: #48a9a6;
+}
+
+.requirements {
+  background-color: #c1666b;
+}
+
+div[role=article] {
+  padding: 10px;
+}
+
+/* --------------------------------
+
+xTypography
+
+-------------------------------- */
+#typography {
+  background-color: #c1666b;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #e4dfda;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #e4dfda;
+}
+
+p {
+  font-size: 11px;
+  line-height: 1.4;
+  color: #e4dfda;
+}
+p a {
+  color: #d4b483;
+  text-decoration: underline;
+}
+p a:link, p a:visited, p a:hover, p a:active {
+  color: #d4b483;
+  text-decoration: underline;
+}
+
+.sidebar .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .wrapper .design-selection {
+  order: 3;
+}
+.sidebar .wrapper .design-archives {
+  order: 1;
+}
+.sidebar .wrapper .zen-resources {
+  order: 2;
+}
+
+/* designs*/
+.design-selection h3 {
+  display: none;
+}
+.design-selection ul {
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+}
+.design-selection ul li {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.design-selection ul li a {
+  display: none;
+}
+.design-selection ul li:nth-of-type(1)::before {
+  content: "1";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(2)::before {
+  content: "2";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(3)::before {
+  content: "3";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(4)::before {
+  content: "4";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(5)::before {
+  content: "5";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(6)::before {
+  content: "6";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(7)::before {
+  content: "7";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(8)::before {
+  content: "8";
+  font-size: 5em;
+  color: #e4dfda;
+  margin: auto;
+  padding-left: 20px;
+}
+.design-selection ul li:nth-of-type(4n+0) {
+  background-color: #4281a4;
+  color: #4281a4;
+}
+.design-selection ul li:nth-of-type(4n+1) {
+  background-color: #48a9a6;
+  color: #48a9a6;
+}
+.design-selection ul li:nth-of-type(4n+2) {
+  background-color: #d4b483;
+  color: #d4b483;
+}
+.design-selection ul li:nth-of-type(4n+3) {
+  background-color: #c1666b;
+  color: #c1666b;
+}
+
+/*reactive screen*/
+@media only screen and (min-width: 700px) {
+  .design-selection h3 {
+    display: block;
+  }
+}
+/*links*/
+.design-archives, .zen-resources {
+  width: 90%;
+  padding: 10px;
+  background-color: #48a9a6;
+}
+.design-archives a, .zen-resources a {
+  text-decoration: none;
+  color: #e4dfda;
+}
+.design-archives h3, .zen-resources h3 {
+  color: #e4dfda;
+}
+.design-archives ul, .zen-resources ul {
+  list-style: none;
+}
+
+@media only screen and (min-width: 500px) {
+  .design-archives, .zen-resources {
+    width: 300px;
+    background-color: #4281a4;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

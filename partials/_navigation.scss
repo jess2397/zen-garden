@@ -1,0 +1,16 @@
+/* --------------------------------
+
+xNavigation
+
+-------------------------------- */
+header {
+    background-color: $color-1;
+    margin: 0px;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    header {
+    background-color: $color-2;   
+    }
+}

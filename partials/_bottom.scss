@@ -1,0 +1,187 @@
+.sidebar .wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    .design-selection{
+        order: 3;
+    }
+    .design-archives{
+        order: 1;
+    }
+    .zen-resources{
+        order: 2;
+    }
+
+
+}
+
+/* designs*/
+
+.design-selection{
+    h3{
+        display: none;
+        color: $color-1;
+    }
+
+
+    ul{
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    margin-left: 0px;
+
+    transition: all 1s ease-out;
+
+    li{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        
+        flex-wrap: wrap;
+        
+        transition: all 1s ease-out;
+        a{
+            opacity: 0;
+            transition: all 1s ease-out;
+        }
+    }
+        
+        li:hover{
+            
+            flex-wrap:wrap;
+            align-self: center;
+            justify-content: center;
+            
+            &::before{
+            opacity: 0;
+        }
+            &:nth-of-type(n){
+                color: $color-3;
+            }
+
+        a{
+            opacity: 1;
+            &::after{
+                content: "\00a0";
+            }
+            transition: all 1s ease-out;
+        }
+    }
+
+    //add numbers
+    $elements: 9;
+    @for $i from 1 to $elements{
+        & li:nth-of-type(#{$i}){
+            &::before{
+                transition: all 1s ease-out;
+                
+                position: absolute;
+                z-index: 4;
+                content: "" + $i;
+                font-size: 5em;
+                color: $color-3;
+                margin: auto;
+
+            }
+        }
+    }
+
+    //alternate colors
+    & li:nth-of-type(4n+0){
+        background-color: $color-1;
+        color: $color-1;
+    }
+    & li:nth-of-type(4n+1){
+        background-color: $color-2;
+        color: $color-2;
+    }
+    & li:nth-of-type(4n+2){
+        background-color: $color-4;
+        color: $color-4;
+    }
+    & li:nth-of-type(4n+3){
+        background-color: $color-5;
+        color: $color-5;
+    }
+}
+
+}
+
+/*reactive screen*/
+@media only screen and (min-width: 700px) {
+    .design-selection{
+        margin-left: 360px;
+
+        h3{
+            display: block;
+        }
+    }
+}
+
+
+
+/*links*/
+.design-archives,.zen-resources{
+    width: 90%;
+    padding: 10px;
+    background-color: $color-2;
+    a{
+    text-decoration:underline;
+    color: $color-3;
+    }
+    h3{
+        color: $color-3;
+    }
+
+    ul{
+        list-style: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    
+    .design-archives,.zen-resources{
+        margin-left: 360px;
+        width: 300px;
+        background-color: $color-4;
+      
+    }
+  
+}
+
+
+footer{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    & a:nth-of-type(4n+0){
+        background-color: $color-1;
+    }
+    & a:nth-of-type(4n+1){
+        background-color: $color-2;
+    }
+    & a:nth-of-type(4n+2){
+        background-color: $color-4;
+    }
+    & a:nth-of-type(4n+3){
+        background-color: $color-5;
+    }
+}
